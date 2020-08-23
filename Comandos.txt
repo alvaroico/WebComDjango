@@ -9,4 +9,59 @@ virtualenv venv -p /usr/bin/python3
 https://www.djangoproject.com/download/
 pip3 install Django==3.1
 django-admin.py startproject simplemooc
-python simplemooc/manage.py runserver
+python3 simplemooc/manage.py runserver
+python3 simplemooc/manage.py migrate
+
+-- Criando aplicação
+python3 simplemooc/manage.py startapp core
+
+
+
+
+Libera memoria WSL2
+echo 4 | sudo tee /proc/sys/vm/drop_caches
+
+
+
+
+Available subcommands:
+
+[auth]
+    changepassword
+    createsuperuser
+
+[contenttypes]
+    remove_stale_contenttypes
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+[sessions]
+    clearsessions
+
+[staticfiles]
+    collectstatic
+    findstatic
+    runserver
