@@ -9,11 +9,11 @@ virtualenv venv -p /usr/bin/python3
 https://www.djangoproject.com/download/
 pip3 install Django==3.1
 django-admin.py startproject simplemooc
-python3 simplemooc/manage.py runserver
-python3 simplemooc/manage.py migrate
+python3 manage.py runserver
+python3 manage.py migrate
 
 -- Criando aplicação
-python3 simplemooc/manage.py startapp core
+python3 manage.py startapp core
 
 
 
