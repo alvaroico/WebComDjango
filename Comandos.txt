@@ -1,0 +1,12 @@
+--- Instalar isolador virtual
+sudo pip3 install virtualenv
+
+--- Cria o isolamento
+virtualenv venv -p /usr/bin/python3
+. venv/bin/activate
+
+--- Django
+https://www.djangoproject.com/download/
+pip3 install Django==3.1
+django-admin.py startproject simplemooc
+python simplemooc/manage.py runserver
